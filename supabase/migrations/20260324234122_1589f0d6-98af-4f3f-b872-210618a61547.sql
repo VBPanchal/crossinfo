@@ -1,0 +1,1 @@
+ALTER TABLE public.stores ADD COLUMN order_data_retention text NOT NULL DEFAULT '1_month';

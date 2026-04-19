@@ -1,0 +1,1 @@
+ALTER TABLE public.store_qr_products ALTER COLUMN store_product_id DROP NOT NULL;

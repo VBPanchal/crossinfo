@@ -1,0 +1,1 @@
+ALTER TABLE public.store_products ADD COLUMN avg_sales_unit text NOT NULL DEFAULT 'carton';

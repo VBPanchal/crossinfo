@@ -1,0 +1,17 @@
+# Frontend only — pair with official self-hosted Supabase Docker stack (see docs/DOCKER_PLAN_A_SELFHOST.md).
+# Build from repo root: docker compose -f docker/docker-compose.yml build
+# Run: docker compose -f docker/docker-compose.yml up -d
+
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: docker/frontend/Dockerfile
+      args:
+        VITE_SUPABASE_URL: ${VITE_SUPABASE_URL:?set in .env next to this file}
+        VITE_SUPABASE_PUBLISHABLE_KEY: ${VITE_SUPABASE_PUBLISHABLE_KEY:?set}
+        VITE_SUPABASE_PROJECT_ID: ${VITE_SUPABASE_PROJECT_ID:?set}
+        VITE_PUBLIC_APP_URL: ${VITE_PUBLIC_APP_URL:-}
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    restart: unless-stopped

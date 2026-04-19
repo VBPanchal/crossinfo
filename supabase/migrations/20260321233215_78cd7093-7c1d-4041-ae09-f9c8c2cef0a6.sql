@@ -1,0 +1,1 @@
+ALTER TABLE public.customer_orders ADD COLUMN collection_number text DEFAULT NULL;

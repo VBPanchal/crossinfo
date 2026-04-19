@@ -1,0 +1,1 @@
+ALTER TABLE public.stores ADD COLUMN unit_suggestion_rules jsonb NOT NULL DEFAULT '{}'::jsonb;

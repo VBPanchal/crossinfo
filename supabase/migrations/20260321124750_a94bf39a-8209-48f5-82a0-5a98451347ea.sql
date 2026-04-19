@@ -1,0 +1,1 @@
+ALTER TABLE public.stores ADD COLUMN show_store_name boolean NOT NULL DEFAULT true;
