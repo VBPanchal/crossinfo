@@ -42,6 +42,7 @@ This folder tracks migrating **off Supabase** to a **NestJS API**, **Prisma ORM*
 | `DATABASE_AND_API_REFERENCE.md` | **Tables, RPCs, Edge Functions, and proposed REST/WebSocket API** for Nest migration. |
 | `SELF_HOSTING_FROM_LOVABLE.md` | **Leaving Lovable + Supabase Cloud**: self-host map (EC2), Strategy A vs B. |
 | `DOCKER_PLAN_A_SELFHOST.md` | **Plan A all-Docker**: official Supabase compose + this repo’s `docker/` web image, env, Edge Functions notes. |
+| `OWN_SERVER_DEPLOYMENT.md` | **No tech change**: same React + self-hosted Supabase + Edge Functions; move only hosting to your server. |
 
 ## Column definitions
 
